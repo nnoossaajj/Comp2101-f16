@@ -1,4 +1,5 @@
 #!/bin/bash
-#this script will  display the processid of the shell in which you run it
+
+# this script will display the current shell process id number
 
 echo $$

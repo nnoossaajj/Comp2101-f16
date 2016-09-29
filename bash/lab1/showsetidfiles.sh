@@ -1,5 +1,11 @@
 #!/bin/bash
-#This is a script which lists all the setuid and setgid regular files in the /usr directory tree.
+This script  lists all the setuid and setgid regular files in the /usr directory tree
+echo "SetUID files"
+echo "-----------------"
+find /usr -type f -executable -perm -4000 -ls
 
-find /usr -xdev \( -perm -5000 \) -type f -print0 | ls -l
-#find /usr -xdev \( -perm -2000 \) -type f -print0 | xargs -0 ls -l
+cat <<EOF
+SetGID files
+EOF
+
+find /usr -type f -executable -perm -2000 -ls
