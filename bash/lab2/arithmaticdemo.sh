@@ -1,7 +1,11 @@
 #!/bin/bash
 
-read -p "Give me a number: " firstnum
-read -p "Give me a second number: " secondnum
+#Create a script to prompt the user for 2 numbers. Perform each of the 5
+#arithmetic operations on the numbers, and display the results in a 
+#user-friendly way. Name it arithmeticdemo.sh.
+
+read -p "Give me 2 numbers separated by a space: " firstnum secondnum
+#read -p "Give me a second number: " secondnum
 
 sum=$(( firstnum + secondnum ))
 echo "$firstnum plus $secondnum equals $sum"

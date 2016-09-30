@@ -5,7 +5,7 @@
 export MYNAME="Jason Scharapenko"
 mytitle="Commander and Cheif"
 hostname=`hostname`
-weekday=(date +%A)
+weekday=$(date +%A)
 
 echo "Welcome to planet $hostname, $MYTITLE $MYNAME!"
 echo "Today is $weekday."
