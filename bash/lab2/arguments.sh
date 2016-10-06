@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#deminstate how to access the arguments on the command line
+#demonstrate how to access the arguments on the command line
 
 echo "the command you gave me was : $0"
 
